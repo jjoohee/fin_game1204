@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>이불 밖은 위험해</title>
+
+	<link rel="stylesheet" type="text/css" href="css/hall_style.css">
+	<link rel="stylesheet" type="text/css" href="css/comcla_style.css">
+	<link rel="stylesheet" type="text/css" href="css/recess_style.css">
+
+<body>
+<!-- 홀~!~! --> 	
+<div id="map1" class="pt-page pt-page-1">
+	<img src="img/comdoor.png" id="cod">
+	<img src="img/professor.png" id="pro">
+	<img src="img/friend.png" id="fri1">
+	<img src="img/rest.png" id="rest">
+
+  <!-- 친구파트 --> 	
+	<!-- 처음 나오는 텍스트 --> 	
+	<div class="textbox" id="talk">
+		<p class="maintext">"공부한다고 도서관 간거 아니었냐? 왜 여기있어?"<br>* 과 동기가 당신에게 말을 걸었다.</p>
+		<div class="choice">
+			<div class="answer">
+				<p id="Y1">
+				-답변한다.
+				</p>
+			</div>
+			<div class="answer">
+				<p id="N1">
+				-무시한다.
+			</p>
+			</div>
+		</div>
+	</div>
+	<!-- 긍정 --> 	
+	<div class="textbox" id="nextyes1">
+		<p class="maintext">*당신은 도서관에서 청춘을 소비하기엔 너무 아까워서 쉬러간다고 동기에게 설명했다.<br>
+"엥? 그럼 쉬는게 아니라 한바탕 뒤집어지게 놀아야지! 오늘 PARTY TONIGHT 고고?"</p>
+		<button class="nextbutton" id="nextbutton1">
+			다음▶
+		</button>
+	</div>
+
+	<div class="textbox" id="nextnextyes1">
+	<p class="maintext">*당신은 고민해보겠다고 했다.<br>
+		"빼지 말고~ 응?"<br><br>
+	</p>
+		<div class="choice">
+			<div class="answer">
+				<a href="badend_fri.html" class="aN2"><p id="NY1">
+				-좋아. 놀자!
+				</p></a>
+			</div>
+			<div class="answer">
+				<p id="NN1">
+				-미안. 다음에 놀자.
+			</p>
+			</div>
+		</div>
+		<button class="out" id="outy1">
+			나가기
+		</button>
+	</div>
+	<!-- 부정 --> 
+	<div class="textbox" id="nextno1">
+		<p class="maintext">* 친구는 머쓱해보인다.</p>
+		<button class="out" id="outn1">
+			나가기
+		</button>
+	</div>
+
+
+	<!-- 교수님파트 --> 	
+
+	<!-- 처음 나오는 텍스트 --> 	
+	<div class="textbox" id="talk2">
+		<p class="maintext">
+			"**이구나, 학교 생활은 잘 하고 있니? 수업은 힘든 거 없고?"
+		<br>* 교수님이 당신에게 말을 걸었다</p>
+		<div class="choice">
+			<div class="answer">
+				<a href="badend_pro.html" class="aN2"><p id="Y2">
+				- 그럼요. 친구들 하고도 두루두루 친해요.
+				</p></a>
+			</div>
+			<div class="answer">
+				<p id="M2">
+					- 아.. 네.
+				</p>
+			</div>
+			<div class="answer">
+				<a href="badend_pro2.html" class="aN2"><p id="N2">
+				- 너무 힘들어요. 특히 교수님의 수업은 최악이에요.
+			</p></a>
+			</div>
+			
+		</div>
+	</div>
+	<!-- 중간 --> 
+	<div class="textbox" id="nextmid2">
+		<p class="maintext">*당신의 단답의 교수님은 많이 뻘쭘하신가보다.
+			<br>*교수님은 남은 학교생활을 잘하라는 말을 남기시고는 연구실로 가셨다</p>
+		<button class="out" id="outm2">
+			나가기
+		</button>
+	</div>
+
+
+<!-- 컴퓨터실 -->
+<div id="map2">
+		<img src="img/flower.png" id="flo">
+		<img src="img/comoff.png" id="off1">
+		<img src="img/comon.png" id="on3">
+		<img src="img/comperson.png" id="person">
+		<img src="img/comoff.png" id="off2">
+		<img src="img/comon.png" id="on1">
+		<img src="img/comoff.png" id="off3">
+		<img src="img/comon.png" id="on2">
+		<img src="img/comoff.png" id="off4">
+		<div id="outcom">나가기</div>
+
+		<div class="textbox" id="textcom1">
+		<p class="maintext">*꽃이 예쁘게 피어있다. 구경할까?</p>
+		<div class="choice">
+			<div class="answer">
+				<a href="badend_flo.html" class="aN2"><p id="CY1">
+				-구경할래
+				</p></a>
+			</div>
+			<div class="answer">
+				<p id="CN1">
+				-다음에 볼래
+			</p>
+			</div>
+		</div>
+	</div>
+	<div class="textbox" id="textcom2">
+		<p class="maintext">*이 컴퓨터는 꺼져있다. 켜볼까?</p>
+		<div class="choice">
+			<div class="answer">
+				<p id="CY2">
+				-켜볼래
+				</p>
+			</div>
+			<div class="answer">
+				<p id="CN2">
+				-그냥 둘래
+			</p>
+			</div>
+		</div>
+	</div>
+	<div class="textbox" id="textcom3">
+		<p class="maintext">
+			"타닥..타닥.."<br><br>
+			*과제를 열심히 하고 있는 하다.<br>
+			*근데 갑자기 고양이 사진은 왜 저장하는거지?</p>
+	</div>
+	<div class="textbox" id="textcom4">
+		<p class="maintext">*이 컴퓨터는 꺼져있다.</p>
+	</div>
+	<div class="textbox" id="textcom5">
+		<p class="maintext">*이 컴퓨터는 켜져있다.</p>
+	</div>
+	<div class="textbox" id="textcom6">
+		<p class="maintext">*이 컴퓨터는 꺼져있다.</p>
+	</div>
+	<div class="textbox" id="textcom7">
+		<p class="maintext">*이 컴퓨터는 켜져있다. 꺼볼까?</p>
+		<div class="choice">
+			<div class="answer">
+				<p id="CY3">
+				-꺼볼래
+				</p>
+			</div>
+			<div class="answer">
+				<p id="CN3">
+				-그냥 둘래
+			</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- 과방 -->
+<div id="map3">
+	<img src="img/flower_re.png" id="flo2">
+	<img src="img/window.png" id="win">
+	<img src="img/sofa.png" id="sofa1">
+	<img src="img/sofa.png" id="sofa2">
+	<img src="img/desk.png" id="desk1">
+	<img src="img/desk.png" id="desk2">
+	<div id="outres">나가기</div>
+
+	<div class="textbox" id="textre1">
+		<p class="maintext">*꽃이 예쁘게 피어있다. 구경할까?</p>
+		<div class="choice">
+			<div class="answer">
+				<a href="badend_flo.html" class="aN2"><p id="RY1">
+				-구경할래
+				</p></a>
+			</div>
+			<div class="answer">
+				<p id="RN1">
+				-다음에 볼래
+			</p>
+			</div>
+		</div>
+	<div class="textbox" id="textre2">
+		<p class="maintext">*다른 과 건물이 보인다.</p>
+	</div>
+	<div class="textbox" id="textre3">
+		<p class="maintext">*편안해 보이는 소파다.</p>
+	</div>
+	<div class="textbox" id="textre4">
+		<p class="maintext">*편안해 보이는 소파다.</p>
+	</div>
+	<div class="textbox" id="textre5">
+		<p class="maintext">*넓은 책상이다.</p>
+	</div>
+	<div class="textbox" id="textre6">
+		<p class="maintext">*넓은 책상이다.</p>
+	</div>
+
+</div>
+
+</div>
+
+<!-- 사운드 --> 
+<audio id="doorsound">
+	  <source src="door.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="frisound">
+	  <source src="seven_twenty.mp3" type="audio/mpeg">
+</audio>
+<audio id="prosound">
+	  <source src="lazy_river_rag.mp3" type="audio/mpeg">
+</audio>
+<audio id="keyboard">
+	  <source src="computer_keyboard.mp3" type="audio/mpeg">
+</audio>
+<audio id="comon">
+	  <source src="computer_on.mp3" type="audio/mpeg">
+</audio>
+<audio id="comoff">
+	  <source src="computer_off.mp3" type="audio/mpeg">
+</audio>
+
+<script type="text/javascript" src="js/map1.js"></script>
+<script type="text/javascript" src="js/map2.js"></script>
+<script type="text/javascript" src="js/map3.js"></script>
+<script type="text/javascript">
+
+
+	cod.onclick = function(){
+		map2.style.display = "block";
+		doorsound.play();
+	}
+	outcom.onclick = function(){
+		map2.style.display = "none";
+		doorsound.play();
+	}
+	rest.onclick = function(){
+		map3.style.display = "block";
+		doorsound.play();
+	}
+	outres.onclick = function(){
+		map3.style.display = "none";
+		doorsound.play();
+	}
+
+
+</script>
+
+</body>
+</html>
